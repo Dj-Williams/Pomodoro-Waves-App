@@ -5,3 +5,5 @@ const applicationController = {
 }
 
 module.exports = applicationController
+
+// This is the controller for the welcome splash page. 
