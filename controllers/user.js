@@ -1,6 +1,4 @@
-const Wave = require('../models/Waves')
 const User = require('../models/User')
-
 
 
 const userController = {
