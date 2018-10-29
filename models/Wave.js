@@ -13,4 +13,4 @@ const Waves = new Schema({
     ]
 })
 
-module.exports = mongoose.model('Waves', Waves)
+module.exports = mongoose.model('Wave', Wave)
