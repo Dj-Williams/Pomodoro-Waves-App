@@ -1,3 +1,21 @@
 <h1>Yo! This is the user show page!</h1>
 
+{{#each user}}
 
+<div class="card text-white">
+
+  <img class="card-img" src="{{profilePic}}" alt="Card image">
+
+  <div class="card-img-overlay">
+    <h5 class="card-title">{{username}}</h5>
+
+    <p class="card-text">Favorite genre: {{favGenre}} | Age: {{Age}} | </p>
+    {{#each waves}}
+    <p class="card-text">Waves: {{wave_Name}}</p>
+    {{/each}}
+  </div>
+</div>
+
+{{/each}}
+
+{{!-- This will have the user account info and the user's individual content. Here I should be able to edit the user's info, create a wave, and delete a wave --}}

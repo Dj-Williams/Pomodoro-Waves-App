@@ -16,7 +16,16 @@ router.get('/', applicationController.index)
 // ↑ Splash Page -------------------------
 
 // ↓ User Page CRUD -------------------------
+// Index
 router.get('/user', userController.index)
+// New 
+router.get('/new', userController.new)
+// Show 
+router.get('/:id', userController.show)
+// Create
+router.post('/user', userController.create)
+
+
 
 
 

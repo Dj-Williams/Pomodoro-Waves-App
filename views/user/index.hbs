@@ -2,24 +2,23 @@
 
 {{#each user}}
 
-<div class="card bg-dark text-white">
+<div class="card text-white">
+
   <img class="card-img" src="{{profilePic}}" alt="Card image">
+
   <div class="card-img-overlay">
     <h5 class="card-title">{{username}}</h5>
-    <p class="card-text">This guys favorite genre is {{favGenre}} and </p>
-    <p class="card-text">Last updated 3 mins ago</p>
+
+    <p class="card-text">Favorite genre: {{favGenre}} | Age: {{Age}} | </p>
+    {{#each waves}}
+    <p class="card-text">Waves: {{wave_Name}}</p>
+    {{/each}}
+    <p class="card-text">Click on this card to log-in with this user.</p>
   </div>
 </div>
 
 {{/each}}
 
+{{!-- Here I should be able to add a user, and delete a user --}}
 
-{{!-- <div class="card" style="width: 20rem;">
-    <img src="{{profilePic}}" alt="">
-  <div class="card-body">
-      {{!-- This says to take the name of all of our stores and give it a card title class h5 styling. --}}
-    <h5 class="card-title">{{username}}</h5>
-    <p class="card-text"></p>
-    <a href="/user/{{_id}}" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div> --}}
+<a href="/new" class="btn btn-primary">Create a new Account!</a>
