@@ -9,7 +9,7 @@ const User = new Schema({
     profilePic: String,
     waves: [{
         type: Schema.Types.ObjectId,
-        ref: 'Waves'
+        ref: 'Wave'
     }]
 })
 
