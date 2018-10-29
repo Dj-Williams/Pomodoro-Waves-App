@@ -37,3 +37,13 @@ const wave1 = new Wave({
 })
 // ↑ Wave Seed Data ↑
 
+// ↓ User Seed Data. ↓
+const user1 = new User({
+    username: "Le Wet Boi",
+    password: "Slicky",
+    favGenre: "Hip-hop",
+    Age: "26",
+    profilePic: "http://andrewwendel.com/wp-content/uploads/2017/06/DOLPHIN-e1498068222504.jpg",
+    waves: [wave1]
+})
+
