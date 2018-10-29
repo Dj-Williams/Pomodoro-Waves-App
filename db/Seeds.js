@@ -38,7 +38,7 @@ const wave1 = new Wave({
 // ↑ Wave Seed Data ↑
 
 // ↓ User Seed Data. ↓
-const user1 = new User({
+const Dj = new User({
     username: "Le Wet Boi",
     password: "Slicky",
     favGenre: "Hip-hop",
@@ -46,4 +46,21 @@ const user1 = new User({
     profilePic: "http://andrewwendel.com/wp-content/uploads/2017/06/DOLPHIN-e1498068222504.jpg",
     waves: [wave1]
 })
+// ↑ Wave Seed Data ↑
+
+
+User.remove({})
+    .then(() => Wave.remove({}))
+    .then(() => Song.remove({}))
+    .then(() => Wave.insertMany([wave1]))
+    .then(() => Song.insertMany([elec1, elec2, elec3]))
+    .then(() => Dj.save())
+    .then(() => console.log("Yo! The Database has successfully been seeded!"))
+    .then(() => mongoose.connection.close())
+
+
+
+
+
+
 

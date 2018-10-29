@@ -1,7 +1,7 @@
 const mongoose = require('../db/connections')
 const Schema = mongoose.Schema
 
-const Waves = new Schema({
+const Wave = new Schema({
     wave_Name: String,
     backgroundImg: String,
     description: String,
