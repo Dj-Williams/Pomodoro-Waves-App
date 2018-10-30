@@ -2,6 +2,7 @@
 
 {{#each user}}
 
+<a href="/{{_id}}">
 <div class="card text-center">
 
   <img class="card-img" src="{{profilePic}}" alt="Card image">
@@ -15,7 +16,7 @@
     {{/each}}
     <p class="card-text">Click on this card to log-in with this user.</p>
   </div>
-</div>
+</div></a> 
 
 {{/each}}
 
