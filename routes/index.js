@@ -38,7 +38,7 @@ router.delete('/:id', userController.delete)
 // ↑ User Page CRUD -------------------------
 
 // ↓ Waves Page CRUD -------------------------
-
+// Show
 router.get('/waves/:id', waveController.show)
 
 // ↑ Waves Page CRUD --------------------------
