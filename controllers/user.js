@@ -24,7 +24,14 @@ const userController = {
       User.create(req.body).then(newUser => {
         res.redirect(`/user`)
         })
-    }
+    },
+    edit: (req, res) => {
+        User.findById(req.params.id).then
+        (user => {
+            res.render('user/edit', {
+                user: user})
+        })
+    },
 }
 
 

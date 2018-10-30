@@ -4,7 +4,7 @@
 <a href="/">Return to Home Page</a>
 
 
-<div class="card text-white">
+<div class="card text-black">
 
   <img class="card-img" src="{{user.profilePic}}" alt="Card image">
 
@@ -14,12 +14,17 @@
     <p class="card-text">Favorite genre: {{user.favGenre}} | Age: {{user.Age}}</p>
 
 
-    {{#each user.waves}}
-    <p class="card-text">Waves: {{wave_Name}}</p>
-    {{/each}}
+    <div class="card text-center" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text"></p>
+    <a href="#" class="btn btn-primary">Get in your Wave</a>
   </div>
-
 </div>
+
+  </div>
+</div>
+
 </main>
 
 {{!-- This will have the user account info and the user's individual content. Here I should be able to edit the user's info, create a wave, and delete a wave --}}

@@ -15,16 +15,19 @@ const userController = require('../controllers/user')
 router.get('/', applicationController.index)
 // ↑ Splash Page -------------------------
 
+
+
 // ↓ User Page CRUD -------------------------
 // Index
 router.get('/user', userController.index)
 // New 
-router.get('/new', userController.new)
+router.get('/user/new', userController.new)
 // Show 
-router.get('/:id', userController.show)
+router.get('/user/:id', userController.show)
 // Create
 router.post('/user', userController.create)
-
+// Edit
+router.get('/edit', userController.edit)
 
 
 

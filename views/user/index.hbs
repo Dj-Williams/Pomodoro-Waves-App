@@ -1,8 +1,10 @@
 <h1>Yo! This is the user index page!</h1>
 
+<a href="/">Return to Home Page</a>
+
 {{#each user}}
 
-<a href="/{{_id}}">
+<a href="/user/{{_id}}">
 <div class="card text-center">
 
   <img class="card-img" src="{{profilePic}}" alt="Card image">
@@ -11,6 +13,8 @@
     <h5 class="card-title">{{username}}</h5>
 
     <p class="card-text">Favorite genre: {{favGenre}} | Age: {{Age}} | </p>
+
+
     {{#each waves}}
     <p class="card-text">Waves: {{wave_Name}}</p>
     {{/each}}
@@ -18,8 +22,14 @@
   </div>
 </div></a> 
 
+<a href="/{{user._id}}" class="btn btn-primary">Edit this account!</a>
+
 {{/each}}
 
 {{!-- Here I should be able to add a user, and delete a user --}}
-
+<br>
+<br>
+<br>
+<br>
+<br>
 <a href="/new" class="btn btn-primary">Create a new Account!</a>
