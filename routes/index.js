@@ -7,6 +7,8 @@ const router = express.Router()
 const applicationController = require('../controllers/application')
 
 const userController = require('../controllers/user')
+
+const waveController = require('../controllers/wave')
 // ↑ Controllers -------------------------
 
 
@@ -33,7 +35,13 @@ router.put('/:id', userController.update)
 router.patch('/:id', userController.update)
 // Delete!
 router.delete('/:id', userController.delete)
+// ↑ User Page CRUD -------------------------
 
+// ↓ Waves Page CRUD -------------------------
+
+router.get('/waves/:id', waveController.show)
+
+// ↑ User Page CRUD --------------------------
 
 
 
