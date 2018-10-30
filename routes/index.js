@@ -27,7 +27,10 @@ router.get('/user/:id', userController.show)
 // Create
 router.post('/user', userController.create)
 // Edit
-router.get('/edit', userController.edit)
+router.get('/:id/edit', userController.edit)
+// Update!
+router.put('user/:id', userController.update)
+router.patch('user/:id', userController.update)
 
 
 

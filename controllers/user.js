@@ -32,8 +32,12 @@ const userController = {
                 user: user})
         })
     },
+    update: (req, res) => {
+        User.findByIdAndUpdate(req.params.id, req.body).then((updatedUser) => {
+            res.redirect(`/${updatedUser._id}`)
+        })
+    },
+
+
 }
-
-
-
 module.exports = userController
