@@ -16,7 +16,9 @@ const userController = {
         res.render('user/new')
     },
     show: (req, res) => {
-    User.findById(req.params.id).then((user) => {
+    User.findById(req.params.id).populate('waves')
+    .then(user => {
+        console.log(user)
         res.render('user/show', {user: user})
         })
     },

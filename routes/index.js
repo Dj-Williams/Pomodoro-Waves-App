@@ -30,7 +30,7 @@ router.get('/user/:id', userController.show)
 router.post('/user', userController.create)
 // Edit
 router.get('/:id/edit', userController.edit)
-// Update! (As of now, Does not work!)
+// Update! 
 router.put('/:id', userController.update)
 router.patch('/:id', userController.update)
 // Delete!
@@ -41,8 +41,7 @@ router.delete('/:id', userController.delete)
 
 router.get('/waves/:id', waveController.show)
 
-// ↑ User Page CRUD --------------------------
-
+// ↑ Waves Page CRUD --------------------------
 
 
 module.exports = router
