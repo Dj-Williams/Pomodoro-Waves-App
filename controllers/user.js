@@ -34,9 +34,14 @@ const userController = {
     },
     update: (req, res) => {
         User.findByIdAndUpdate(req.params.id, req.body).then((updatedUser) => {
-            res.redirect(`/${updatedUser._id}`)
+            res.redirect(`/user/${updatedUser._id}`)
         })
     },
+    delete: (req, res) => {
+        User.findByIdAndRemove(req.params.id).then(() => {
+            res.redirect('/user')
+        })
+    }
 
 
 }

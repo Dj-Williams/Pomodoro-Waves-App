@@ -25,6 +25,9 @@
 
 <a href="/{{_id}}/edit" class="btn btn-primary">Edit this account!</a>
 
+<form action="/{{_id}}?_method=DELETE" method="POST">
+<button type="submit">Delete this Account!</button></form>
+
 {{/each}}
 
 {{!-- Here I should be able to add a user, and delete a user --}}
@@ -33,4 +36,4 @@
 <br>
 <br>
 <br>
-<a href="/new" class="btn btn-primary">Create a new Account!</a>
+<a href="/user/new" class="btn btn-primary">Create a new Account!</a>
