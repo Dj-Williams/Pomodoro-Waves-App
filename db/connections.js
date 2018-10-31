@@ -9,8 +9,6 @@ else {
 mongoose.connect('mongodb://localhost/pomodoro-waves')
 }
 
-
-
 mongoose.connection.once('open', () => {
     console.log ('Mongoose is now connected to MongoDb, yo!')
 })
