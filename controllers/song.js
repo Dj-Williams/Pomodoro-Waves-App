@@ -12,7 +12,6 @@ index: (req, res) => {
         })
     },
 show: (req, res) => {
-    // res.send(`Yo! If you can see this, I'm working!`)
 Song.findById(req.params.id)
 .then((song) => {
     res.render('waves/show', {song: song})
