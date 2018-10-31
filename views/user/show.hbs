@@ -18,10 +18,11 @@
   <div class="card-body">
     <h5 class="card-title">{{wave_Name}}</h5>
   {{#each user.waves}}
-    <a href="/waves/{{_id}}" class="btn btn-primary">{{wave_Name}}</a>
+    <a href="/user/{{_id}}/waves/wavesid" class="btn btn-primary btn-lg">{{wave_Name}}</a>
     <p class="card-text">{{description}}</p>
   {{/each}}
-  <a class="btn btn-primary btn-lg" href="#" role="button">Create a Wave!</a>
+
+  <a class="btn btn-primary" href="/waves/new" role="button">Create a Wave!</a>
   </div>
 </div>
 

@@ -20,9 +20,10 @@ router.get('/', applicationController.index)
 
 
 // ↓ User Page CRUD -------------------------
+
 // Index
 router.get('/user', userController.index)
-// New 
+// New (Form)
 router.get('/user/new', userController.new)
 // Show 
 router.get('/user/:id', userController.show)
@@ -35,11 +36,19 @@ router.put('/:id', userController.update)
 router.patch('/:id', userController.update)
 // Delete!
 router.delete('/:id', userController.delete)
+
 // ↑ User Page CRUD -------------------------
 
 // ↓ Waves Page CRUD -------------------------
-// Show
-router.get('/waves/:id', waveController.show)
+// Index 
+router.get('/waves', waveController.index)
+// New (Form) ✓
+router.get('/waves/new', waveController.new)
+// Show (Individual Page) ✓
+router.get('/user/:id/waves/wavesid', waveController.show)
+// Create
+router.post('/user/:id/waves/wavesid', waveController.create)
+
 
 // ↑ Waves Page CRUD --------------------------
 

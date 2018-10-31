@@ -6,7 +6,7 @@ const userController = {
     // This send all the users to 
     index: (req, res) => {
         // res.send(`Yo! This is the user index! If you can see me, then I'm working!`)
-    User.find({}).populate('waves') 
+    User.find({}).populate('songs') 
         .then( (user) => {
             res.render('user/index', {
                 user: user})
@@ -18,7 +18,6 @@ const userController = {
     show: (req, res) => {
     User.findById(req.params.id).populate('waves')
     .then(user => {
-        console.log(user)
         res.render('user/show', {user: user})
         })
     },
