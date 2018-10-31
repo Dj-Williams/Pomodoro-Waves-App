@@ -33,7 +33,7 @@ const wave1 = new Wave({
     wave_Name: "Electro Wave",
     backgroundImg: "https://i.gifer.com/1RW2.gif",
     description: "Neon Lamborginis, Palm Trees, and Flamingos. All the Retro 80's sauce you could ever ask for.",
-    Songs: [elec1, elec2, elec3]
+    songs: [elec1, elec2, elec3]
 })
 // ↑ Wave Seed Data ↑
 

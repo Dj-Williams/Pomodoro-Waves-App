@@ -5,10 +5,10 @@ const Wave = new Schema({
     wave_Name: String,
     backgroundImg: String,
     description: String,
-    Songs: [
+    songs: [
         {
             type: Schema.Types.ObjectId,
-            ref: 'Songs'
+            ref: 'Song'
         }
     ]
 })

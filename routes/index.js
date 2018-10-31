@@ -52,7 +52,7 @@ router.get('/user/:id/waves/wavesid', waveController.show)
 // Create
 router.post('/waves', waveController.create)
 // Delete!
-router.delete('/:id', waveController.delete)
+router.delete('/waves/:id', waveController.delete)
 
 
 // ↑ Waves Page CRUD --------------------------
