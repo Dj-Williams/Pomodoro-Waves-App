@@ -47,7 +47,9 @@ router.get('/waves/new', waveController.new)
 // Show (Individual Page) ✓
 router.get('/user/:id/waves/wavesid', waveController.show)
 // Create
-router.post('/user/:id/waves/wavesid', waveController.create)
+router.post('/waves', waveController.create)
+// Delete!
+router.delete('waves/:id', waveController.delete)
 
 
 // ↑ Waves Page CRUD --------------------------

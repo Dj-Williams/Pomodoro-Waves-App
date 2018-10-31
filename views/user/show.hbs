@@ -16,6 +16,7 @@
 
     <div class="card text-center" style="width: 18rem;">
   <div class="card-body">
+    <a class="btn btn-primary" href="/waves" role="button">Go to the Waves</a>
     <h5 class="card-title">{{wave_Name}}</h5>
   {{#each user.waves}}
     <a href="/user/{{_id}}/waves/wavesid" class="btn btn-primary btn-lg">{{wave_Name}}</a>
@@ -23,6 +24,7 @@
   {{/each}}
 
   <a class="btn btn-primary" href="/waves/new" role="button">Create a Wave!</a>
+
   </div>
 </div>
 
