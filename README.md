@@ -23,7 +23,7 @@ I am proud to present my [Trello Board](https://trello.com/b/aS5MBBQe/wdi-projec
 My Stretch Goals are highlighted in gold and my Super Stretch Goals/Version 2 objectives are in orange. I wasn't able to achieve any of them this time around, but I'm glad that they're more attainable items than the last project. 
 
 #WireFrame:
-![Image of Wireframe](/Users/cb_atl_110_david_williams/Desktop/Pomodoro-Waves-App-Proj-2/assets/IMG_20181031_125605368.jpg)
+![Image of Wireframe](assets/wireframe)
 
 Link to the "app":
 
