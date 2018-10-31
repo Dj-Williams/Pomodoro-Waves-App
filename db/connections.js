@@ -2,12 +2,11 @@ require('dotenv').config()
 const mongoose = require('mongoose')
 
 // connecting to the database
-if (process.env.MONGODB_URI) {
-    mongoose.connect(process.env.MONGODB_URI);
-}
-else {
-mongoose.connect('mongodb://localhost/pomodoro-waves')
-}
+mongoose.connect(process.env.MONGODB_URI);
+
+// else {
+// mongoose.connect('mongodb://localhost/pomodoro-waves')
+// }
 
 
 
