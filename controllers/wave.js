@@ -3,7 +3,8 @@ const Song = require('../models/Song')
 
 const waveController = {
     index: (req, res) => {
-        Wave.find({}).then((wave) => {
+        Wave.find({}).populate('song')
+        .then((wave) => {
             res.render('waves/index', {
                 wave: wave
             })
@@ -16,7 +17,8 @@ const waveController = {
 
     show: (req, res) => {
         // res.send(`Yo! If you can see this, I'm working!`)
-    Wave.findById(req.params.id).then((wave) => {
+    Wave.findById(req.params.id).populate('song')
+    .then((wave) => {
         res.render('waves/show', {wave: wave})
         })
     },

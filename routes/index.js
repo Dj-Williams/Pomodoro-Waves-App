@@ -9,6 +9,8 @@ const applicationController = require('../controllers/application')
 const userController = require('../controllers/user')
 
 const waveController = require('../controllers/wave')
+
+const songController = require('../controllers/song')
 // ↑ Controllers -------------------------
 
 
@@ -40,6 +42,7 @@ router.delete('/:id', userController.delete)
 // ↑ User Page CRUD -------------------------
 
 // ↓ Waves Page CRUD -------------------------
+
 // Index 
 router.get('/waves', waveController.index)
 // New (Form) ✓
@@ -49,10 +52,13 @@ router.get('/user/:id/waves/wavesid', waveController.show)
 // Create
 router.post('/waves', waveController.create)
 // Delete!
-router.delete('waves/:id', waveController.delete)
+router.delete('/:id', waveController.delete)
 
 
 // ↑ Waves Page CRUD --------------------------
 
+router.get('/user/:id/waves/wavesid', songController.index)
+
+router.get('/user/:id/waves/wavesid', songController.show)
 
 module.exports = router
