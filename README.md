@@ -15,8 +15,9 @@ _THE STACK!_
 * Handlebars
 * Node.js  
 
+#ERD:
 
-![ERD](/Users/cb_atl_110_david_williams/Desktop/Pomodoro-Waves-App-Proj-2/assets/Dj Williams Project 2 ERD Chart (1).png)
+![Image of ERD](/assets/DjWilliamsProject2ERDChart.png)
 
 I am proud to present my [Trello Board](https://trello.com/b/aS5MBBQe/wdi-project-2-the-zone-app) for this for this project/app, and I feel like I unlocked a new level of organization and focus. (Even though I totally built this app backwards! 😫) 
 
