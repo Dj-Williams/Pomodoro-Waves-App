@@ -25,7 +25,7 @@ My Stretch Goals are highlighted in gold and my Super Stretch Goals/Version 2 ob
 
 #WireFrame:
 
-![Image of Wireframe](assets/wireframe)
+![Image of Wireframe](assets/wireframe.jpg)
 
 Link to the "app":
 
